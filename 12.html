@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Page</title>
+    <title>Styled Text Blocks</title>
     <style>
-        .box1 {
-            background-color: lightblue;
-            border: 3px solid red;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
+        /* First "Hello World" block */
+        .text-block1 {
+            background-color: #cce7f0; /* Light blue */
+            color: #000;
             font-weight: bold;
-            box-shadow: 0 0 0 5px red; /* 模擬雙層紅色邊框 */
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            border: 5px solid red;
+            border-width: 5px 10px 5px 10px; /* 2 borders with different thickness */
+            margin: 20px;
         }
-        .box2 {
-            background-color: yellow;
-            border: 3px solid blue;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
+
+        /* Second "Hello World" block */
+        .text-block2 {
+            background-color: #ffff99; /* Yellow */
+            color: #000;
             font-weight: bold;
-            box-shadow: 0 0 0 5px blue; /* 模擬雙層藍色邊框 */
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            border: 5px solid blue;
+            border-radius: 15px; /* Rounded corners */
+            margin: 20px;
         }
-        .box3 {
-            background-color: green;
-            background-image: radial-gradient(circle, darkgreen 10%, transparent 10%);
-            background-size: 20px 20px;
-            border: 3px solid black;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
+
+        /* Third "Hello World" block */
+        .text-block3 {
+            background-color: #4caf50; /* Green */
+            color: #000;
             font-weight: bold;
-            box-shadow: 0 0 0 5px black; /* 模擬雙層黑色邊框 */
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            background-image: radial-gradient(circle, grey 10%, transparent 10%);
+            background-size: 30px 30px; /* Spacing for the dotted effect */
         }
     </style>
 </head>
 <body>
 
-    <div class="box1">Hello World</div>
-    <div class="box2">Hello World</div>
-    <div class="box3">Hello World</div>
+    <div class="text-block1">Hello World</div>
+    <div class="text-block2">Hello World</div>
+    <div class="text-block3">Hello World</div>
 
 </body>
 </html>
