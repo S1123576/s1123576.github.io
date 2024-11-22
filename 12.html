@@ -1,35 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Headings</title>
+    <style>
+        h1 {
+            font-size: 2.5em;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px pink;
+        }
 
-.box {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    margin: 20px 0;
-}
+        h2 {
+            font-size: 2em;
+            font-style: italic;
+            border: 3px solid yellow;
+            padding: 5px;
+            display: inline-block;
+        }
 
-/* 第一個方塊：淺藍背景 + 紅色框 */
-.red-border {
-    background-color: #ADD8E6; /* 淺藍色 */
-    border: 5px solid red;
-    color: black;
-}
-
-/* 第二個方塊：黃色背景 + 藍色框 */
-.yellow-box {
-    background-color: yellow;
-    border: 5px solid blue;
-    color: black;
-}
-
-/* 第三個方塊：綠色背景 + 紫色圓點 */
-.green-polka-dots {
-    background-color: green;
-    border: 5px solid black;
-    color: black;
-    background-image: radial-gradient(circle, purple 5%, green 10%);
-    background-size: 50px 50px;
-}
+        h3 {
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+</body>
+</html>
