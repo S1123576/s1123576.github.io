@@ -1,55 +1,32 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>樣式化文本塊</title>
-    <style>
-        /* 第一個 "Hello World" 區塊 */
-        .text-block1 {
-            background-color: #cce7f0; /* 淺藍色背景 */
-            color: #000;
-            font-weight: bold;
-            font-size: 2em;
-            text-align: center;
-            padding: 20px;
-            border: 5px solid red;
-            box-shadow: 0 0 0 5px #ff4500; /* 外層紅色邊框 */
-            margin: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-        /* 第二個 "Hello World" 區塊 */
-        .text-block2 {
-            background-color: #ffff99; /* 黃色背景 */
-            color: #000;
-            font-weight: bold;
-            font-size: 2em;
-            text-align: center;
-            padding: 20px;
-            border: 3px solid blue;
-            border-radius: 15px; /* 圓角邊框 */
-            margin: 20px;
-        }
+.box {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
 
-        /* 第三個 "Hello World" 區塊 */
-        .text-block3 {
-            background-color: #4caf50; /* 綠色背景 */
-            color: #000;
-            font-weight: bold;
-            font-size: 2em;
-            text-align: center;
-            padding: 20px;
-            margin: 20px;
-            background-image: radial-gradient(circle, grey 10%, transparent 10%);
-            background-size: 20px 20px; /* 點狀間距 */
-        }
-    </style>
-</head>
-<body>
+.red-border {
+    background-color: #ADD8E6; /* Light Blue */
+    border: 5px solid red;
+    color: black;
+}
 
-    <div class="text-block1">Hello World</div>
-    <div class="text-block2">Hello World</div>
-    <div class="text-block3">Hello World</div>
+.blue-border {
+    background-color: yellow;
+    border: 5px solid blue;
+    color: black;
+}
 
-</body>
-</html>
+.green-polka-dots {
+    background-color: green;
+    border: 5px solid black;
+    color: black;
+    background-image: radial-gradient(circle, purple 5%, green 10%);
+    background-size: 50px 50px;
+}
