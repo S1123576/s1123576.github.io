@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="預約收垃圾服務，輕鬆填寫資料，完成預約。">
+    <title>預約收垃圾</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>預約收垃圾</h1>
+    </header>
+    <main>
+        <form id="reservationForm">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">聯絡電話：</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">地址：</label>
+            <input type="text" id="address" name="address" required>
+            <label for="date">預約日期：</label>
+            <input type="date" id="date" name="date" required>
+            <label for="volume">垃圾體積：</label>
+            <select id="volume" name="volume" required>
+                <option value="小型">小型</option>
+                <option value="中型">中型</option>
+                <option value="大型">大型</option>
+                <option value="超大型">超大型</option>
+            </select>
+            <label for="type">垃圾種類：</label>
+            <select id="type" name="type" required>
+                <option value="可回收">可回收</option>
+                <option value="不可回收">不可回收</option>
+                <option value="廚餘">廚餘</option>
+            </select>
+            <button type="button" onclick="reviewData()">送出</button>
+        </form>
+    </main>
+</body>
+</html>
